@@ -6,4 +6,4 @@ for i in range(0,a):
 hash_num = 0
 for i in range(0,a):
     hash_num += c[i] * 31 ** i
-print(hash_num)
+print(hash_num % 1234567891)
