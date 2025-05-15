@@ -2,7 +2,6 @@ from collections import deque
 a,b = map(int,input().split())
 q = deque()
 q.append((a,1))
-r = 0
 
 while(q):
     n,t = q.popleft()
