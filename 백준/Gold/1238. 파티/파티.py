@@ -21,6 +21,8 @@ for _ in range(m):
     graph[a].append((b,c))
 time = [0] * (n+1)
 for i in graph:
+    if i == k:
+        continue
     time[i] = dikstra(i,k)
     time[i] += dikstra(k,i)
 print(max(time))
