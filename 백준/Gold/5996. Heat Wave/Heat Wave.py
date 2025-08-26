@@ -15,7 +15,6 @@ while sequence:
         continue
     if node == end:
         break
-    distance[node] = weight
     for n1,w in graph[node]:
         if distance[n1] > weight+w:
             distance[n1] = weight+w
