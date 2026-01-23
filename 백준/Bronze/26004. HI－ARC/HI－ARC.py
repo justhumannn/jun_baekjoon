@@ -1,0 +1,8 @@
+n = int(input())
+s = input()
+h_count = s.count('H')
+i_count = s.count('I')
+a_count = s.count('A')
+r_count = s.count('R')
+c_count = s.count('C')
+print(min(h_count, i_count, a_count, r_count, c_count))
